@@ -1,0 +1,24 @@
+{
+  "name": "abstudio.github.io",
+  "version": "1.0.0",
+  "description": "Aman Balooni's static portfolio site, built with semantic HTML, Bootstrap 5, CSS, and vanilla JavaScript. It is ready for GitHub Pages and does not require a backend or build step.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanbalooni/abstudio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/amanbalooni/abstudio.github.io/issues"
+  },
+  "homepage": "https://github.com/amanbalooni/abstudio.github.io#readme",
+  "dependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
