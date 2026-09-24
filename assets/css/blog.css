@@ -1,6 +1,7 @@
 .blog-page { background: var(--paper); }
 .blog-banner { min-height: 515px; position: relative; isolation: isolate; color: #fff; display: flex; align-items: flex-end; overflow: hidden; }
 .blog-banner-image { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgba(20, 21, 26, .9), rgba(20, 21, 26, .44)), url('../../images/blog-banner/ui-ux-in-ai-ml.png') center 42% / cover no-repeat; }
+.blog-funnel .blog-banner-image { background-image: linear-gradient(90deg, rgba(20, 21, 26, .82), rgba(20, 21, 26, .2)), url('../../images/blog-banner/funnel-design.png'); background-position: center 48%; }
 .blog-banner::after { content: ''; position: absolute; inset: auto 0 0; height: 28%; z-index: -1; background: linear-gradient(transparent, rgba(20, 21, 26, .35)); }
 .blog-banner-content { padding-top: 90px; padding-bottom: 66px; max-width: 1120px; }
 .blog-banner .eyebrow { color: rgba(255, 255, 255, .74); }
