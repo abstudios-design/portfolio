@@ -742,12 +742,12 @@
                 <div class="life-bridge-sitemap-canvas">
                     <h4 class="life-bridge-sitemap-root flow-node text-white" style="background: #59aea3;">Sitemap</h4>
 
-                    <svg class="life-bridge-sitemap-connectors" viewBox="0 0 1000 412" preserveAspectRatio="none"
-                        aria-hidden="true">
+                    <svg class="life-bridge-sitemap-connectors life-bridge-sitemap-connectors--caregiver"
+                        viewBox="0 0 1000 412" preserveAspectRatio="none" aria-hidden="true">
                         <defs>
-                            <marker id="sitemap-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                            <marker id="caregiver-sitemap-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
                                 markerHeight="6" orient="auto-start-reverse">
-                                <path d="M0 0 10 5 0 10z" fill="#6f9ed4"></path>
+                                <path d="M0 0 10 5 0 10z" fill="#59AEA3"></path>
                             </marker>
                         </defs>
                         <path class="sitemap-route" d="M297 137H326V31H352"></path>
@@ -761,23 +761,27 @@
                         <path class="sitemap-route" d="M852 276V337H909V352"></path>
                     </svg>
 
-                    <article class="life-bridge-sitemap-node flow-node flow-node--splash" style="background: rgb(89 174 163 / 14%);">
+                    <article class="life-bridge-sitemap-node flow-node flow-node--splash"
+                        style="background: rgb(89 174 163 / 14%);">
                         <i class="bi bi-file-earmark-fill" aria-hidden="true" style="color: #59aea3;"></i>
                         <h4 class="mb-0">Splash Screen</h4>
                         <i class="bi bi-three-dots" aria-hidden="true" style="color: #59aea3;"></i>
                     </article>
-                    <article class="life-bridge-sitemap-node flow-node flow-node--create" style="background: rgb(89 174 163 / 14%);">
+                    <article class="life-bridge-sitemap-node flow-node flow-node--create"
+                        style="background: rgb(89 174 163 / 14%);">
                         <i class="bi bi-file-earmark-fill" aria-hidden="true" style="color: #59aea3;"></i>
                         <h4 class="mb-0">Create an account</h4>
                         <i class="bi bi-three-dots" aria-hidden="true" style="color: #59aea3;"></i>
                     </article>
-                    <article class="life-bridge-sitemap-node flow-node flow-node--login" style="background: rgb(89 174 163 / 14%);">
+                    <article class="life-bridge-sitemap-node flow-node flow-node--login"
+                        style="background: rgb(89 174 163 / 14%);">
                         <i class="bi bi-file-earmark-fill" aria-hidden="true" style="color: #59aea3;"></i>
                         <h4 class="mb-0">Login</h4>
                         <i class="bi bi-three-dots" aria-hidden="true" style="color: #59aea3;"></i>
                     </article>
                     <article
-                        class="life-bridge-sitemap-node life-bridge-sitemap-node--dashboard flow-node flow-node--dashboard" style="background: rgb(89 174 163 / 14%);">
+                        class="life-bridge-sitemap-node life-bridge-sitemap-node--dashboard flow-node flow-node--dashboard"
+                        style="background: rgb(89 174 163 / 14%);">
                         <i class="bi bi-file-earmark-fill" aria-hidden="true" style="color: #59aea3;"></i>
                         <h4 class="mb-0">Dashboard</h4>
                         <i class="bi bi-three-dots" aria-hidden="true" style="color: #59aea3;"></i>
@@ -816,7 +820,7 @@
             <section class="life-bridge-paper-wireframes case-section case-visible container"
                 aria-label="LifeBridge Paper Wireframes">
                 <div class="admin-section">
-                    <h3>Paper Wireframes</h3>
+                    <h3 style="color:#59aea3">Paper Wireframes</h3>
                     <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
                         I
                         proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
@@ -835,8 +839,18 @@
                     </article>
 
                     <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/paper/Patient-Detail-(Caregiver).jpg"
+                            alt="Caregiver Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
                         <img src="../images/life-bridge/caregiver/paper/Dasboard.jpg"
-                            alt="Caregiver Dashboard Wireframe" class="life-bridge-wireframe-image w-100">
+                            alt="Caregiver Patient Detail Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/paper/LogOut-(Caregiver).jpg"
+                            alt="Caregiver Logout Wireframe" class="life-bridge-wireframe-image w-100">
                     </article>
 
                     <article class="life-bridge-wireframe-item">
@@ -845,18 +859,503 @@
                     </article>
 
                     <article class="life-bridge-wireframe-item">
-                        <img src="../images/life-bridge/caregiver/paper/Patient-Detail-(Caregiver).jpg"
+                        <img src="../images/life-bridge/caregiver/paper/Care-Plan-(Caregiver).jpg"
+                            alt="Caregiver Care Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/paper/Menu-(Caregiver).jpg"
+                            alt="Caregiver Menu Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+                </div>
+            </section>
+
+            <section class="life-bridge-lofi-wireframes case-section case-visible container"
+                aria-label="LifeBridge Lofi Wireframes">
+                <div class="admin-section">
+                    <h3 style="color:#59aea3">Lofi Wireframes</h3>
+                    <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
+                        I proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
+                        goal was to address these issues through thoughtful layout and interaction design.</p>
+                </div>
+                <div class="life-bridge-paper-wireframes-grid">
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Create-an-account(Caregiver).jpg"
+                            alt="Caregiver Registration Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Login-(Caregiver).jpg"
+                            alt="Caregiver Login Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Dashboard.jpg" alt="Caregiver Profile Wireframe"
+                            class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Profile-(Patient).jpg"
                             alt="Caregiver Patient Detail Wireframe" class="life-bridge-wireframe-image w-100">
                     </article>
 
                     <article class="life-bridge-wireframe-item">
-                        <img src="../images/life-bridge/admin/paper/Admin-Caregiver-Profile.jpg"
-                            alt="Admin Caregiver Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                        <img src="../images/life-bridge/caregiver/lofi/LogVitals-(Caregiver).jpg"
+                            alt="Caregiver Log Vitals Wireframe" class="life-bridge-wireframe-image w-100">
                     </article>
 
                     <article class="life-bridge-wireframe-item">
-                        <img src="../images/life-bridge/caregiver/paper/Caregiver-Profile.jpg"
-                            alt="Admin Patient Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                        <img src="../images/life-bridge/caregiver/lofi/Caregiver-Profile.jpg"
+                            alt="Caregiver Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Care-Plan-(Caregiver).jpg"
+                            alt="Caregiver Care Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/lofi/Menu-(Caregiver).jpg"
+                            alt="Caregiver Menu Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+                </div>
+            </section>
+
+            <section class="life-bridge-hifi-wireframes case-section case-visible container"
+                aria-label="LifeBridge Hifi Wireframes">
+                <div class="admin-section">
+                    <h3 style="color:#59aea3">Hifi Wireframes</h3>
+                    <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
+                        I proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
+                        goal was to address these issues through thoughtful layout and interaction design.</p>
+                </div>
+                <div class="life-bridge-paper-wireframes-grid">
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Create-an-account(Caregiver).jpg"
+                            alt="Caregiver Registration Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Login-(Caregiver).jpg"
+                            alt="Caregiver Login Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Dashboard.jpg" alt="Caregiver Profile Wireframe"
+                            class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Profile-(Patient).jpg"
+                            alt="Caregiver Patient Detail Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/LogVitals-(Caregiver).jpg"
+                            alt="Caregiver Log Vitals Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Caregiver-Profile.jpg"
+                            alt="Caregiver Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Care-Plan-(Caregiver).jpg"
+                            alt="Caregiver Care Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/caregiver/hifi/Menu-(Caregiver).jpg"
+                            alt="Caregiver Menu Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="patient-perspective-content" id="patient">
+            <section class="admin-perspective-section case-section case-visible container"
+                aria-labelledby="admin-perspective-title">
+               
+                <div class="patient-perspective-header">
+                    <div class="admin-perspective-icon" aria-hidden="true">
+                        <img src="../images/life-bridge/icons/patient.svg" alt="Patient Icon" width="72" height="72">
+                    </div>
+                    <div class="admin-perspective-title-wrap">
+                        <div class="admin-perspective-kicker">SECTION 03</div>
+                        <h2 id="admin-perspective-title" class="mb-0">Patient Perspective</h2>
+                    </div>
+                </div>
+
+                <div class="admin-profile-card">
+                    <div class="admin-section-heading">
+                        <h3 style="color:#E8A020">Stakeholder Profile</h3>
+                    </div>
+
+                    <div class="admin-profile-row">
+                        <div class="patient-profile-label">Patient Types</div>
+                        <div class="admin-profile-value">Elderly (65+), Chronic Disease (COPD, CHF), Post-Surgical
+                            Recovery, Mental Health Support</div>
+                    </div>
+                    <div class="admin-profile-row">
+                        <div class="patient-profile-label">Active Patients</div>
+                        <div class="admin-profile-value">14,000+ across 4 regional coverage areas</div>
+                    </div>
+                    <div class="admin-profile-row">
+                        <div class="patient-profile-label">Key Tools</div>
+                        <div class="admin-profile-value">LifeBridge Patient Portal, Appointment Tracker, Medication
+                            Reminders, Care Team Chat</div>
+                    </div>
+                    <div class="admin-profile-row admin-profile-row--goal">
+                        <div class="patient-profile-label">Primary Goals</div>
+                        <div class="admin-profile-value">Access consistent, high-quality care with full transparency
+                            into their own health journey</div>
+                    </div>
+                </div>
+
+                <div class="admin-challenges-card">
+                    <div class="admin-section-heading">
+                        <h3 style="color:#E8A020">Challenges Before LifeBridge</h3>
+                    </div>
+
+                    <div class="admin-challenges-content">
+                        <div class="admin-challenges-copy">
+                            <p>Patients — and their families — experienced the consequences of an uncoordinated care
+                                system most acutely. With no single point
+                                of contact, no visibility into their own care plans, and inconsistent caregiver
+                                assignments, many patients felt anxious, disempowered,
+                                and disconnected from their healthcare journey.</p>
+                            <ul>
+                                <li>Patients had no way to view or understand their own care plans, leading to
+                                    low treatment adherence.</li>
+                                <li>Frequent caregiver changes (due to scheduling inefficiencies) disrupted care
+                                    relationships and eroded patient trust.</li>
+                                <li>Medication adherence was tracked manually, with missed doses going
+                                    undetected for days.</li>
+                                <li>Families living at a distance had no structured way to stay informed about a
+                                    loved one's care.</li>
+                                <li>No feedback mechanism meant patients' concerns rarely reached care
+                                    coordinators in time to matter.</li>
+                                <li>Emergency contacts were inconsistently maintained; in critical situations,
+                                    response delays were common.</li>
+                            </ul>
+                        </div>
+
+                        <div class="admin-challenges-visual">
+                            <img src="../images/life-bridge/life-bridge-challenge.jpg"
+                                alt="LifeBridge operational challenge illustration">
+                        </div>
+                    </div>
+                </div>
+
+                <section class="life-bridge-deployed" aria-labelledby="life-bridge-deployed-title">
+                    <div class="life-bridge-deployed-heading">
+                        <h3 id="life-bridge-deployed-title" style="color:#E8A020">LifeBridge Solutions Deployed</h3>
+                    </div>
+
+                    <div class="life-bridge-deployed-grid">
+                        <article class="life-bridge-solution">
+                            <div class="life-bridge-solution-icon" aria-hidden="true">
+                                <img src="../images/life-bridge/icons/Patient-facing.svg" alt="Mobile App Icon"
+                                    width="72" height="72">
+                            </div>
+                            <h4>1. Patient-Facing Digital Portal</h4>
+                            <p>Patients and their authorized family members access a
+                                secure portal showing current care plans, upcoming visits,
+                                assigned care team members, and health progress notes.
+                                The portal is available via web and is a simplified mobile
+                                app designed for elderly users.</p>
+                        </article>
+
+                        <article class="life-bridge-solution">
+                            <div class="life-bridge-solution-icon" aria-hidden="true">
+                                <img src="../images/life-bridge/icons/Clock.svg" alt="Digital Visit Icon" width="72"
+                                    height="72">
+                            </div>
+                            <h4>2. Medication Adherence & Reminders</h4>
+                            <p>Automated medication reminders are sent via SMS, app
+                                notification, or phone call — based on patient preference.
+                                Caregivers see real-time adherence data during visits,
+                                enabling them to intervene immediately when patterns of
+                                non-adherence emerge.
+                            </p>
+                        </article>
+
+                        <article class="life-bridge-solution">
+                            <div class="life-bridge-solution-icon" aria-hidden="true">
+                                <img src="../images/life-bridge/icons/Caregiver.svg" alt="Caregiver Icon" width="72"
+                                    height="72">
+                            </div>
+                            <h4>3. Consistent Caregiver Assignment</h4>
+                            <p>LifeBridge's scheduling engine prioritizes caregiver continuity
+                                — matching the same caregivers to the same patients
+                                whenever possible. Continuity of care assignment increased
+                                from 54% to 89% within 6 months of deployment
+
+                            </p>
+                        </article>
+
+                        <article class="life-bridge-solution">
+                            <div class="life-bridge-solution-icon" aria-hidden="true">
+                                <img src="../images/life-bridge/icons/Family.svg" alt="Family Icon" width="72"
+                                    height="72">
+                            </div>
+                            <h4>4. Family Engagement Dashboard</h4>
+                            <p>Designated family contacts receive structured, privacy-compliant
+                                updates after each care visit. The family dashboard shows
+                                recent visit summaries, upcoming appointments, and health
+                                trend indicators — eliminating anxious phone calls to care
+                                coordinators.</p>
+                        </article>
+                    </div>
+                </section>
+                
+            </section>
+
+            <section class="life-bridge-sitemap life-bridge-patient-sitemap case-section case-visible container"
+                aria-label="Patient application sitemap">
+                <!-- <div class="admin-section-heading border-0 flex-column">
+                    <h3 style="color:#E8A020">Patient App Sitemap</h3>
+                </div> -->
+                <div class="life-bridge-sitemap-canvas life-bridge-patient-sitemap-canvas">
+                    <h4 class="life-bridge-sitemap-root patient-sitemap-root">Sitemap</h4>
+
+                    <svg class="life-bridge-sitemap-connectors patient-sitemap-connectors" viewBox="0 0 1000 310"
+                        preserveAspectRatio="none" aria-hidden="true">
+                        <defs>
+                            <marker id="patient-sitemap-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                                markerHeight="6" orient="auto">
+                                <path d="M0 0 10 5 0 10z" fill="#E8A020" />
+                            </marker>
+                        </defs>
+                        <path class="sitemap-route" d="M297 31H352" />
+                        <path class="sitemap-route" d="M649 31H704" />
+                        <path class="sitemap-route" d="M968 62V137" />
+                        <path class="sitemap-route" d="M704 137H649" />
+                        <path class="sitemap-route" d="M352 137H182" />
+                        <path class="sitemap-route" d="M500 168V202H89V249" />
+                        <path class="sitemap-route" d="M500 202H294V249" />
+                        <path class="sitemap-route" d="M500 202V249" />
+                        <path class="sitemap-route" d="M500 202H704V249" />
+                        <path class="sitemap-route" d="M500 202H909V249" />
+                    </svg>
+
+                    <article class="life-bridge-sitemap-node patient-sitemap-node patient-flow--splash">
+                        <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                        <h4 class="mb-0">Splash Screen</h4>
+                        <i class="bi bi-three-dots" aria-hidden="true"></i>
+                    </article>
+                    <article class="life-bridge-sitemap-node patient-sitemap-node patient-flow--create">
+                        <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                        <h4 class="mb-0">Create an account</h4>
+                        <i class="bi bi-three-dots" aria-hidden="true"></i>
+                    </article>
+                    <article class="life-bridge-sitemap-node patient-sitemap-node patient-flow--dashboard">
+                        <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                        <h4 class="mb-0">Dashboard</h4>
+                        <i class="bi bi-three-dots" aria-hidden="true"></i>
+                    </article>
+                    <article class="life-bridge-sitemap-node patient-sitemap-node patient-flow--login">
+                        <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                        <h4 class="mb-0">Login</h4>
+                        <i class="bi bi-three-dots" aria-hidden="true"></i>
+                    </article>
+
+                    <div class="patient-sitemap-help" aria-label="Get help">
+                        <i class="bi bi-bell-fill" aria-hidden="true"></i>
+                        <span>GET HELP</span>
+                    </div>
+
+                    <div class="patient-sitemap-modules">
+                        <article class="life-bridge-sitemap-node patient-sitemap-node patient-sitemap-module">
+                            <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                            <h4 class="mb-0">Home</h4>
+                            <i class="bi bi-three-dots" aria-hidden="true"></i>
+                        </article>
+                        <article class="life-bridge-sitemap-node patient-sitemap-node patient-sitemap-module">
+                            <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                            <h4 class="mb-0">Planning</h4>
+                            <i class="bi bi-three-dots" aria-hidden="true"></i>
+                        </article>
+                        <article class="life-bridge-sitemap-node patient-sitemap-node patient-sitemap-module">
+                            <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                            <h4 class="mb-0">Add Task</h4>
+                            <i class="bi bi-three-dots" aria-hidden="true"></i>
+                        </article>
+                        <article class="life-bridge-sitemap-node patient-sitemap-node patient-sitemap-module">
+                            <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                            <h4 class="mb-0">Messaging</h4>
+                            <i class="bi bi-three-dots" aria-hidden="true"></i>
+                        </article>
+                        <article class="life-bridge-sitemap-node patient-sitemap-node patient-sitemap-module">
+                            <i class="bi bi-file-earmark-fill" aria-hidden="true"></i>
+                            <h4 class="mb-0">Notifications</h4>
+                            <i class="bi bi-three-dots" aria-hidden="true"></i>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="life-bridge-paper-wireframes case-section case-visible container"
+                aria-label="LifeBridge Paper Wireframes">
+                <div class="admin-section">
+                    <h3 style="color:#E8A020">Paper Wireframes</h3>
+                    <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
+                        I
+                        proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
+                        goal
+                        was to address these issues through thoughtful layout and interaction design.</p>
+                </div>
+                <div class="life-bridge-paper-wireframes-grid">
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Splash-screen.jpg"
+                            alt="Patient Splash Screen Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Login-(Patient).jpg" alt="Patient Login Wireframe"
+                            class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Create-an-account(Patient).jpg"
+                            alt="Patient Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Login-(Patient).jpg"
+                            alt="Patient Dashboard Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Dashboard-(Patient).jpg"
+                            alt="Patient Logout Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Dashboard-Full-(Patient).jpg"
+                            alt="Patient Dashboard Full Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Health-Plan(Patient).jpg"
+                            alt="Patient Health Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Emergency-Assistance.jpg"
+                            alt="Patient Emergency Assistance Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/paper/Create-Task.jpg"
+                            alt="Patient Create Task Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+                </div>
+            </section>
+
+            <section class="life-bridge-paper-wireframes case-section case-visible container"
+                aria-label="LifeBridge Paper Wireframes">
+                <div class="admin-section">
+                    <h3 style="color:#E8A020">Paper Wireframes</h3>
+                    <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
+                        I
+                        proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
+                        goal
+                        was to address these issues through thoughtful layout and interaction design.</p>
+                </div>
+                <div class="life-bridge-paper-wireframes-grid">
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Splash-screen.jpg"
+                            alt="Patient Splash Screen Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Login-(Patient).jpg" alt="Patient Login Wireframe"
+                            class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Create-an-account(Patient).jpg"
+                            alt="Patient Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Dashboard-(Patient).jpg"
+                            alt="Patient Logout Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Dashboard-Full-(Patient).jpg"
+                            alt="Patient Dashboard Full Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Health-Plan(Patient).jpg"
+                            alt="Patient Health Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Emergency-Assistance.jpg"
+                            alt="Patient Emergency Assistance Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/lofi/Create-Task.jpg"
+                            alt="Patient Create Task Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+                </div>
+            </section>
+
+            <section class="life-bridge-paper-wireframes case-section case-visible container"
+                aria-label="LifeBridge Paper Wireframes">
+                <div class="admin-section">
+                    <h3 style="color:#E8A020">HiFi Wireframes</h3>
+                    <p>After identifying key user pain points related to navigation, browsing, and the checkout process,
+                        I
+                        proceeded to sketch paper wireframes for each screen of the app. During this phase, my primary
+                        goal
+                        was to address these issues through thoughtful layout and interaction design.</p>
+                </div>
+                <div class="life-bridge-paper-wireframes-grid">
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Splash-screen.jpg"
+                            alt="Patient Splash Screen Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Login-(Patient).jpg" alt="Patient Login Wireframe"
+                            class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Create-an-account(Patient).jpg"
+                            alt="Patient Profile Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Dashboard-(Patient).jpg"
+                            alt="Patient Dashboard Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Dashboard-Full-(Patient).jpg"
+                            alt="Patient Dashboard Full Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Health-Plan(Patient).jpg"
+                            alt="Patient Health Plan Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Emergency-Assistance.jpg"
+                            alt="Patient Emergency Assistance Wireframe" class="life-bridge-wireframe-image w-100">
+                    </article>
+
+                    <article class="life-bridge-wireframe-item">
+                        <img src="../images/life-bridge/patient/hifi/Create-Task.jpg"
+                            alt="Patient Create Task Wireframe" class="life-bridge-wireframe-image w-100">
                     </article>
                 </div>
             </section>
