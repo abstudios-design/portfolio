@@ -31,3 +31,11 @@
 .lz-footer{padding:60px 0 100px}.lz-next{border-top:1px solid var(--lz-line);padding-top:30px;display:flex;justify-content:space-between;gap:20px}.lz-next a{color:var(--lz-blue);text-decoration:none;font-weight:600}
 @media(max-width:900px){.lz-grid{grid-template-columns:1fr;gap:30px}.lz-dashboard{transform:none}.lz-window-body{grid-template-columns:110px 1fr}.lz-mini-grid{grid-template-columns:1fr}.lz-problem-grid,.lz-screen-grid{grid-template-columns:1fr 1fr}.lz-design{grid-template-columns:1fr}.lz-principles{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.lz-wrap{padding:0 18px}.lz-hero{padding-top:60px}.lz-section{padding:70px 0}.lz-hero h1{font-size:50px}.lz-lede{font-size:17px}.lz-dashboard{padding:7px;border-radius:18px}.lz-window-body{grid-template-columns:1fr}.lz-mini-side{display:none}.lz-mini-main{padding:16px}.lz-problem-grid,.lz-flow,.lz-role-grid,.lz-screen-grid,.lz-principles{grid-template-columns:1fr}.lz-ai{padding:28px 22px}.lz-swatches{grid-template-columns:1fr 1fr}.lz-next{flex-direction:column}}
+
+
+/* Shared case-study banner treatment, matched to the first case studies. */
+.lz-case-banner{margin:0;border-radius:0;min-height:190px;padding:48px 56px;display:flex;align-items:center;background:#e8f0ff;border:1px solid #dbe7ff;overflow:hidden;position:relative}
+.lz-case-banner:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(37,99,235,.18);border-radius:50%;right:-55px;top:-110px}
+.lz-case-banner:after{content:"";position:absolute;width:150px;height:150px;border:1px solid rgba(37,99,235,.12);border-radius:50%;right:100px;bottom:-95px}
+.lz-case-banner span{position:relative;z-index:1;font-size:clamp(28px,4vw,54px);line-height:1;letter-spacing:-.045em;font-weight:700;color:var(--lz-ink)}
+@media(max-width:620px){.lz-case-banner{min-height:150px;padding:34px 24px}.lz-case-banner span{font-size:30px}}
