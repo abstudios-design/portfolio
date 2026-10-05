@@ -110,3 +110,8 @@
 .ingredlens-page .lz-final{background:#163D34;color:#fff}.ingredlens-page .lz-final .lz-label{color:#8ed0bf}.ingredlens-page .lz-final blockquote{border:0;background:transparent;padding:0;margin:0 0 28px;color:#fff;font-size:clamp(30px,4vw,56px);line-height:1.02;letter-spacing:-.06em}.ingredlens-page .lz-final-copy{max-width:760px;color:#d6e5e1;font-size:16px;line-height:1.8}.ingredlens-page .lz-final-summary{max-width:760px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2);color:#fff;font-size:18px;line-height:1.6}
 @media(max-width:900px){.ingredlens-page .lz-principles,.ingredlens-page .lz-screen-grid-wide{grid-template-columns:1fr 1fr}.ingredlens-page .lz-tool-list>div{grid-template-columns:1fr}}
 @media(max-width:620px){.ingredlens-page .lz-principles,.ingredlens-page .lz-screen-grid-wide{grid-template-columns:1fr}.ingredlens-page .lz-hero-statement{margin-top:35px}.ingredlens-page .lz-final blockquote{font-size:34px}}
+
+/* Executive summary principle icons */
+.ingredlens-page .lz-principle{position:relative;padding-left:42px}
+.ingredlens-page .lz-principle-icon{position:absolute;left:0;top:14px;width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:#176B58;color:#fff;font-size:14px}
+.ingredlens-page .lz-principle b{display:block}
