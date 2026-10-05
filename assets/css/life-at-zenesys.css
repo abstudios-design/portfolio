@@ -74,3 +74,39 @@
   .ingredlens-page .lz-case-banner{min-height:150px;padding:34px 24px}
   .ingredlens-page .lz-case-banner span{font-size:2.3rem}
 }
+
+/* Content-driven case study refresh */
+.ingredlens-page{--lz-blue:#176B58;--lz-indigo:#163D34;--lz-ink:#20282D;--lz-muted:#68747C;--lz-bg:#F7F8FA;--lz-line:#E3E8EB;--lz-green:#176B58}
+.ingredlens-page .lz-hero{background:linear-gradient(180deg,#edf6f3 0%,#fff 100%)}
+.ingredlens-page .lz-hero h1 span,.ingredlens-page .lz-kicker,.ingredlens-page .lz-label{color:#176B58}
+.ingredlens-page .lz-hero-statement{margin:52px 0 0;max-width:1000px;padding:30px 0;border-top:1px solid #E3E8EB}
+.ingredlens-page .lz-hero-statement strong{display:block;font-size:clamp(24px,3vw,42px);letter-spacing:-.05em;line-height:1.05}
+.ingredlens-page .lz-hero-statement p{max-width:650px;margin:12px 0 0;color:#68747C;font-size:16px}
+.ingredlens-page .lz-principles{grid-template-columns:repeat(2,1fr)}
+.ingredlens-page .lz-principle{border-top-color:#176B58}
+.ingredlens-page .lz-role.employee{background:#eef7f4;border-color:#b9ddd3}
+.ingredlens-page .lz-role.admin{background:#f4f7f6;border-color:#d7e1de}
+.ingredlens-page .lz-role strong{color:#176B58}
+.ingredlens-page .lz-tool-list{border-top:1px solid #E3E8EB}
+.ingredlens-page .lz-tool-list>div{display:grid;grid-template-columns:220px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid #E3E8EB}
+.ingredlens-page .lz-tool-list strong{color:#20282D}.ingredlens-page .lz-tool-list span{color:#68747C}
+.ingredlens-page .lz-persona{height:100%;padding:28px;border:1px solid #E3E8EB;background:#fff}
+.ingredlens-page .lz-persona>span{font:500 .7rem var(--font-mono);letter-spacing:.09em;color:#176B58}
+.ingredlens-page .lz-persona h3{font-size:28px;margin:12px 0 24px}
+.ingredlens-page .lz-persona strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-top:18px}
+.ingredlens-page .lz-persona b{display:block;margin-top:22px;color:#176B58}
+.ingredlens-page .lz-table{--bs-table-bg:transparent;font-size:14px}
+.ingredlens-page .lz-table th{font:500 .68rem var(--font-mono);text-transform:uppercase;letter-spacing:.08em;color:#68747C;border-bottom:1px solid #E3E8EB;padding:14px}
+.ingredlens-page .lz-table td{padding:15px 14px;border-bottom:1px solid #E3E8EB;color:#68747C}
+.ingredlens-page .lz-table td:first-child{font-weight:600;color:#20282D}
+.ingredlens-page .lz-ia-card{height:100%;padding:26px;background:#fff;border:1px solid #E3E8EB}
+.ingredlens-page .lz-ia-card h3{margin-bottom:18px}
+.ingredlens-page .lz-ia-card pre{margin:0;white-space:pre-wrap;font:12px/1.7 "DM Mono",monospace;color:#68747C}
+.ingredlens-page .lz-screen-grid-wide{grid-template-columns:repeat(3,1fr)}
+.ingredlens-page .lz-screen{min-height:240px}
+.ingredlens-page .lz-screen p{font-size:13px;line-height:1.6;color:#68747C;margin:0}
+.ingredlens-page .lz-swatch.zenesys-green{background:#176B58;color:#fff}.ingredlens-page .lz-swatch.dark-green{background:#163D34;color:#fff}.ingredlens-page .lz-swatch.product-bg{background:#F7F8FA;border:1px solid #E3E8EB}.ingredlens-page .lz-swatch.border{background:#E3E8EB;color:#20282D}.ingredlens-page .lz-swatch.product-ink{background:#20282D;color:#fff}.ingredlens-page .lz-swatch.muted{background:#919BA2;color:#fff}
+.ingredlens-page .lz-philosophy{height:100%;padding:20px 0;border-top:2px solid #176B58}.ingredlens-page .lz-philosophy b{display:block;font-size:15px}.ingredlens-page .lz-philosophy p{font-size:13px;line-height:1.6;color:#68747C;margin:10px 0 0}
+.ingredlens-page .lz-final{background:#163D34;color:#fff}.ingredlens-page .lz-final .lz-label{color:#8ed0bf}.ingredlens-page .lz-final blockquote{border:0;background:transparent;padding:0;margin:0 0 28px;color:#fff;font-size:clamp(30px,4vw,56px);line-height:1.02;letter-spacing:-.06em}.ingredlens-page .lz-final-copy{max-width:760px;color:#d6e5e1;font-size:16px;line-height:1.8}.ingredlens-page .lz-final-summary{max-width:760px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2);color:#fff;font-size:18px;line-height:1.6}
+@media(max-width:900px){.ingredlens-page .lz-principles,.ingredlens-page .lz-screen-grid-wide{grid-template-columns:1fr 1fr}.ingredlens-page .lz-tool-list>div{grid-template-columns:1fr}}
+@media(max-width:620px){.ingredlens-page .lz-principles,.ingredlens-page .lz-screen-grid-wide{grid-template-columns:1fr}.ingredlens-page .lz-hero-statement{margin-top:35px}.ingredlens-page .lz-final blockquote{font-size:34px}}
