@@ -4,8 +4,9 @@
   --lz-amber:#f59e0b;--lz-red:#dc2626;--lz-radius:20px;
 }
 .lz-page{background:var(--lz-bg);color:var(--lz-ink);font-family:Inter,DM Sans,system-ui,sans-serif}
-.lz-page .case-study-header{background:rgba(245,247,250,.92);border-bottom:1px solid var(--lz-line);backdrop-filter:blur(14px)}
-.lz-page .brand img{max-height:36px}.lz-page .back-link{color:var(--lz-muted)}
+/* Keep the Life at Zenesys navigation aligned with the shared case-study navigation. */
+.lz-page .case-study-header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.lz-page .brand img{max-height:36px}
 .lz-wrap{max-width:1180px;margin:auto;padding:0 28px}
 .lz-hero{padding:88px 0 52px;background:linear-gradient(180deg,#eef4ff 0%,var(--lz-bg) 100%);overflow:hidden}
 .lz-kicker{font:500 12px/1 DM Mono,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--lz-blue);margin:0 0 22px}
@@ -33,9 +34,7 @@
 @media(max-width:620px){.lz-wrap{padding:0 18px}.lz-hero{padding-top:60px}.lz-section{padding:70px 0}.lz-hero h1{font-size:50px}.lz-lede{font-size:17px}.lz-dashboard{padding:7px;border-radius:18px}.lz-window-body{grid-template-columns:1fr}.lz-mini-side{display:none}.lz-mini-main{padding:16px}.lz-problem-grid,.lz-flow,.lz-role-grid,.lz-screen-grid,.lz-principles{grid-template-columns:1fr}.lz-ai{padding:28px 22px}.lz-swatches{grid-template-columns:1fr 1fr}.lz-next{flex-direction:column}}
 
 
-/* Shared case-study banner treatment, matched to the first case studies. */
-.lz-case-banner{margin:0;border-radius:0;min-height:190px;padding:48px 56px;display:flex;align-items:center;background:#e8f0ff;border:1px solid #dbe7ff;overflow:hidden;position:relative}
-.lz-case-banner:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(37,99,235,.18);border-radius:50%;right:-55px;top:-110px}
-.lz-case-banner:after{content:"";position:absolute;width:150px;height:150px;border:1px solid rgba(37,99,235,.12);border-radius:50%;right:100px;bottom:-95px}
-.lz-case-banner span{position:relative;z-index:1;font-size:clamp(28px,4vw,54px);line-height:1;letter-spacing:-.045em;font-weight:700;color:var(--lz-ink)}
+/* Banner treatment aligned with the first two case studies: full-width, flat, editorial and minimal. */
+.lz-case-banner{margin:0;min-height:190px;padding:48px 56px;display:flex;align-items:center;background:#e8f0ff;border:0;overflow:hidden}
+.lz-case-banner span{font-size:clamp(28px,4vw,54px);line-height:1;letter-spacing:-.045em;font-weight:700;color:var(--lz-ink)}
 @media(max-width:620px){.lz-case-banner{min-height:150px;padding:34px 24px}.lz-case-banner span{font-size:30px}}
