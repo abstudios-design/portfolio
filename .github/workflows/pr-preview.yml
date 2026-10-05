@@ -31,3 +31,5 @@ jobs:
           wait-for-pages-deployment: true
           comment: true
           qr-code: false
+
+      # Trigger a new repository commit so Vercel generates the PR preview.
