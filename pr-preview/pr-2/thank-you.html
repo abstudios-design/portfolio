@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Message sent | UI/UX Playground</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--ink: #17212b;
+			--muted: #66737d;
+			--paper: #f5f8f7;
+			--mint: #d8f3e8;
+			--coral: #ff765f;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			padding: 24px;
+			color: var(--ink);
+			background: var(--paper);
+			font-family: "DM Sans", sans-serif;
+		}
+
+		main {
+			position: relative;
+			width: min(100%, 760px);
+			overflow: hidden;
+			padding: clamp(36px, 8vw, 80px);
+			background: white;
+			border: 1px solid #e2ebe7;
+			box-shadow: 18px 18px 0 var(--mint);
+		}
+
+		main::after {
+			content: "";
+			position: absolute;
+			right: -50px;
+			top: -50px;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			background: var(--coral);
+		}
+
+		.eyebrow {
+			margin: 0 0 24px;
+			color: var(--coral);
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: .14em;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			max-width: 520px;
+			margin: 0 0 20px;
+			font-family: "Space Grotesk", sans-serif;
+			font-size: clamp(42px, 8vw, 76px);
+			line-height: .98;
+			letter-spacing: -.04em;
+		}
+
+		.message {
+			max-width: 500px;
+			margin: 0 0 36px;
+			color: var(--muted);
+			font-size: 18px;
+			line-height: 1.6;
+		}
+
+		a {
+			display: inline-flex;
+			align-items: center;
+			gap: 12px;
+			padding: 14px 20px;
+			color: white;
+			background: var(--ink);
+			font-weight: 700;
+			text-decoration: none;
+			transition: transform .2s ease, background .2s ease;
+		}
+
+		a:hover { background: var(--coral); transform: translate(-3px, -3px); }
+
+		@media (max-width: 560px) {
+			body { padding: 16px; }
+			main { box-shadow: 10px 10px 0 var(--mint); }
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<p class="eyebrow">Message received</p>
+		<h1>Thanks for reaching out.</h1>
+		<p class="message">Your message is on its way. I’ll get back to you soon. In the meantime, feel free to explore more of the work.</p>
+		<a href="index.html#work">Back to the work <span aria-hidden="true">↗</span></a>
+	</main>
+</body>
+
+</html>
