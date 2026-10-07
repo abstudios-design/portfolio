@@ -226,7 +226,7 @@ small {
 .article-funnel { background: #d9e5ff url('../../images/blog-banner/funnel-design.png') center / cover no-repeat; color: #fff; }
 .article-funnel span { text-shadow: 0 2px 12px rgba(12, 46, 125, .45); }
 .article-wcag {background: #d9e5ff url('../../images/blog-banner/accessability.png') center / cover no-repeat; color: #fff; }
-.article-ai-first {background: #d9e5ff url('../../images/blog-banner/ui-ux-design-ai.png') center / cover no-repeat; color: #fff; }
+.article-ai-first {background: #d9e5ff url('../../images/blog-banner/ai-first-ux-skills.svg') center / cover no-repeat; color: #fff; }
 .project-sage .project-visual { background: #d5e2d3 url('../../images/covers/Life-bridge-cover.jpg') center center / cover no-repeat; }
 .project-orange .project-visual { background: #f1d6b7 url('../../images/covers/Turismo-Transports-cover.jpg') center center / cover no-repeat; }
 .project-red .project-visual { background: #efc9c1 url('../../images/covers/Cke-Resturants-cover.jpg') center center / cover no-repeat; }
