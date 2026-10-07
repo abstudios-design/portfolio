@@ -49,6 +49,9 @@
 .ingredlens-page .lz-figma-frame{overflow:hidden;background:#f0f0f2;border:1px solid var(--lz-line);border-radius:10px;position:relative}
 .ingredlens-page .lz-figma-frame.desktop{aspect-ratio:auto}
 .ingredlens-page .lz-figma-frame.mobile{aspect-ratio:auto;max-height:none}
-.ingredlens-page .lz-screen-image{display:block;width:100%;height:auto}
+
 .ingredlens-page .lz-screen-showcase:nth-child(even){background:#fcfcfd}
 @media(max-width:767px){.ingredlens-page .lz-screen-showcase{padding:18px;border-radius:12px}.ingredlens-page .lz-screen-heading h3{font-size:19px}.ingredlens-page .lz-screen-explanation{padding-left:0}.ingredlens-page .lz-screen-pair{grid-template-columns:1fr;gap:22px}.ingredlens-page .lz-figma-frame.desktop{aspect-ratio:auto}.ingredlens-page .lz-figma-frame.mobile{aspect-ratio:auto;max-height:none}}
+
+/* Uploaded Life at Zenesys screen images */
+.ingredlens-page .lz-screen-image{display:block;width:100%;height:auto}
