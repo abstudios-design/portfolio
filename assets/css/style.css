@@ -258,3 +258,5 @@ small {
 }
 
 .article-figma-variants { background: #eef2ff url('../../images/blog-banner/figma-variants-vs-components.svg') center / cover no-repeat; }
+
+.project-grid > a.project-card { color: inherit; text-decoration: none; display: block; }
