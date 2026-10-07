@@ -17,3 +17,21 @@
 .cx-final{padding:120px 0;background:#f5f7fa;text-align:center}.cx-final .cx-label{justify-content:center}.cx-final h2{max-width:850px;margin:15px auto;font-size:clamp(2.3rem,5vw,4.5rem);line-height:1.02;letter-spacing:-.06em}.cx-final h3{max-width:850px;margin:0 auto;font-size:clamp(1.5rem,3vw,2.6rem);font-weight:500;line-height:1.2}.cx-final h3 em{font-style:normal;color:var(--cx-blue)}.cx-final p:last-child{margin:30px 0 0;color:var(--cx-muted);font:500 12px "DM Mono";letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:991px){.cx-hero-grid{grid-template-columns:1fr}.cx-goals{grid-template-columns:1fr 1fr}.cx-screen-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:767px){.cx-section,.cx-hero{padding:70px 0}.cx-metrics,.cx-principles,.cx-challenge-grid,.cx-role-cards,.cx-personas,.cx-results{grid-template-columns:1fr}.cx-flow{grid-template-columns:1fr}.cx-flow>i{display:none}.cx-goals,.cx-screen-grid{grid-template-columns:1fr}.cx-type{display:block}.cx-type span{display:block;margin-top:8px}.cx-dashboard{margin-top:15px}.cx-hero h1{font-size:3rem}}
+/* CredX iPhone 16 screen gallery */
+.cx-screens-section .row{align-items:flex-start}
+.cx-phone-card{display:flex;flex-direction:column;align-items:center}
+.cx-iphone16{position:relative;width:min(100%,310px);aspect-ratio:9 / 18.9;padding:8px;background:#15171b;border:2px solid #2b2e34;border-radius:46px;box-shadow:0 24px 55px rgba(17,24,39,.18),inset 0 0 0 2px #090a0c;overflow:hidden}
+.cx-iphone16::before{content:"";position:absolute;inset:4px;border:1px solid rgba(255,255,255,.12);border-radius:42px;pointer-events:none;z-index:4}
+.cx-iphone16::after{content:"";position:absolute;top:9px;left:50%;width:32%;height:25px;transform:translateX(-50%);background:#08090b;border-radius:0 0 17px 17px;z-index:5;box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.cx-iphone-speaker{position:absolute;z-index:6;top:18px;left:50%;width:48px;height:4px;transform:translateX(-50%);border-radius:10px;background:#272a30}
+.cx-iphone-screen{position:relative;width:100%;height:100%;border-radius:38px;overflow-y:auto;overflow-x:hidden;background:#fff;scrollbar-width:thin;scrollbar-color:#9ca3af transparent;-webkit-overflow-scrolling:touch}
+.cx-iphone-screen::-webkit-scrollbar{width:5px}
+.cx-iphone-screen::-webkit-scrollbar-track{background:transparent}
+.cx-iphone-screen::-webkit-scrollbar-thumb{background:#9ca3af;border-radius:10px}
+.cx-iphone-screen img{display:block;width:100%;height:auto;max-width:none;margin:0}
+.cx-phone-card figcaption{width:min(100%,310px);padding:16px 4px 0}
+.cx-phone-card figcaption strong{display:block;font-size:14px;line-height:1.35}
+.cx-phone-card figcaption span{display:block;margin-top:5px;font-size:11px;line-height:1.55;color:var(--cx-muted)}
+@media(max-width:991px){.cx-iphone16{width:min(100%,290px)}.cx-phone-card figcaption{width:min(100%,290px)}}
+@media(max-width:575px){.cx-iphone16{width:min(100%,300px)}.cx-phone-card figcaption{width:min(100%,300px)}}
+
