@@ -256,3 +256,5 @@ small {
   text-transform: uppercase;
   color: var(--purple);
 }
+
+.article-figma-variants { background: #eef2ff url('../../images/blog-banner/figma-variants-vs-components.svg') center / cover no-repeat; }
