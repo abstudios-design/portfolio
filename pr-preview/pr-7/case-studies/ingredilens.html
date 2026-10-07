@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IngredLens food and nutrition scanner app case study by Aman Balooni.">
+  <title>IngredLens | UI/UX Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../images/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/case-study.css">
+  <link rel="stylesheet" href="../assets/css/ingredilens-design.css">
+</head>
+
+<body class="case-study-page ingredlens-page" id="top">
+  <header class="case-study-header">
+    <nav class="container case-study-nav" aria-label="Case study navigation"><a class="brand"
+        href="https://abstudios-design.github.io/portfolio" aria-label="UI UX Playground home"><img
+          src="../images/logo-x.png" title="UX Playground Logo" alt="UX Playground"></a>
+      <div class="case-nav-links"><a href="#overview">Overview</a><a href="#process">Process</a><a
+          href="#design">Design</a><a class="back-link" href="../index.html#work"><i class="bi bi-arrow-left"></i> Back
+          to work</a></div><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="case-nav-links"
+        aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+    </nav>
+    <div class="case-nav-mobile" id="case-nav-links"><a href="#overview">Overview</a><a href="#process">Process</a><a
+        href="#design">Design</a><a href="../index.html#work">Back to work</a></div>
+  </header>
+
+  <main>
+    <!-- TOP SECTION: recreated from the supplied reference design -->
+    <section class="il-hero container">
+      <div class="il-wrap">
+        <a class="il-back" href="../index.html#work" aria-label="Back to work">
+          <i class="bi bi-arrow-left"></i>
+        </a>
+
+        <div class="il-kicker"><strong>CASE STUDY</strong><span>—</span><span>PERSONALISED &amp; AI-POWERED FOOD
+            SCANNING</span><a href="#overview">[Version-1]</a></div>
+
+        <h1>IngredLens - Making food choice safer with Personal Preference</h1>
+
+        <p class="il-subtitle">Simply scan a food product and instantly understand its ingredients, nutrition, and
+          potential concerns personalized for you.</p>
+
+        <div class="il-tags" aria-label="Project categories">
+          <span>MOBILE APP</span>
+          <span>FOOD &amp; HEALTHCARE</span>
+          <span>PRODUCT DESIGN</span>
+        </div>
+
+        <div class="il-hero-card">
+          <div class="il-hero-copy">
+            <h2>Is this product<br>safe for me?</h2>
+            <p class="il-scan-line">Scan Smarter. Eat Safer.</p>
+            <div class="il-meta-block"><strong>Role:</strong><span>UI/UX Designer, end-to-end</span></div>
+            <div class="il-meta-block"><strong>Output:</strong><span>Flows, wireframes &amp; design system</span></div>
+            <div class="il-meta-block"><strong>Tools</strong><span>Figma, FigJam, Illustrator</span></div>
+          </div>
+          <div class="il-hero-visual">
+            <img src="../images/hero/ingredlens-hero-visual.jpg" alt="IngredLens food product scanning interface">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section container case-visible" id="overview">
+      <h2>Overview</h2>
+      <div class="il-overview-copy">
+        <p><strong>IngredLens</strong> is a personalized food and beverage scanning application designed to help people
+          make safer and healthier purchasing decisions. Users can scan packaged food products to instantly understand
+          their ingredients, nutritional values, allergens, and potential health risks. By considering a user's medical
+          conditions, allergies, and dietary preferences, <strong>IngredLens</strong> transforms complex food labels
+          into simple, personalized guidance:</p>
+        <p><strong>Safe. Caution. Avoid.</strong></p>
+        <p>The goal was to design an experience that answers one simple but important question:</p>
+        <blockquote>“Is this product safe for me?”</blockquote>
+      </div>
+    </section>
+
+    <section class="case-section container case-visible" id="challenge">
+      <h2>The Challenge</h2>
+      <div class="il-overview-copy">
+        <p>Food packaging contains a large amount of nutritional and ingredient information, but understanding what that
+          information means can be difficult. A product that appears healthy may contain ingredients that are unsuitable
+          for someone with:</p>
+      </div>
+      <div class="condition-list" aria-label="Conditions and preferences">
+        <span class="condition-pill condition-pill--diabetes"><i class="bi bi-droplet-half"
+            aria-hidden="true"></i>Diabetes</span>
+        <span class="condition-pill"><i class="bi bi-heart-pulse" aria-hidden="true"></i>High blood pressure</span>
+        <span class="condition-pill"><i class="bi bi-activity" aria-hidden="true"></i>Thyroid conditions</span>
+        <span class="condition-pill"><i class="bi bi-shield-exclamation" aria-hidden="true"></i>Food allergies</span>
+        <span class="condition-pill"><i class="bi bi-bar-chart-line" aria-hidden="true"></i>High cholesterol</span>
+        <span class="condition-pill"><i class="bi bi-leaf" aria-hidden="true"></i>Specific dietary preferences</span>
+      </div>
+      <div class="il-overview-copy">
+        <p><b>For example,</b> a peanut butter product may look like a healthy choice. However, a person managing
+          diabetes may need to understand whether its sugar and carbohydrate content could significantly impact their
+          blood sugar.</p>
+      </div>
+      <div class="challenge-bottom row align-items-end g-0">
+        <div class="col-lg-7">
+          <h4>The challenge was to create a product-scanning experience that could:</h4>
+
+          <ul class="challenge-points">
+            <li>Simplify complex nutritional information</li>
+            <li>Personalize results for every user</li>
+            <li>Clearly communicate health risks</li>
+            <li>Avoid overwhelming users with medical terminology</li>
+            <li>Help users make better decisions immediately</li>
+            <li>Recommend healthier alternatives when necessary</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 challenge-visual-wrap">
+          <img class="challenge-visual" src="../images/mockups/challenge-food-illustration.png"
+            alt="Food products including milk, juice, chips, salad, water and other packaged foods">
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section container case-visible" id="problem">
+      <h2>The Problem</h2>
+      <div class="il-overview-copy">
+        <div class="problem-highlight">
+          <p class="mb-0"><b>Food labels provide information, but they don't provide personalized answers.</b></p>
+        </div>
+        <p>Users often need to manually read ingredients, understand nutritional tables, identify allergens, and
+          determine
+          whether a product aligns with their health requirements.</p>
+      </div>
+      <div class="problem-tags" aria-label="Key difficulties">
+        <span>Time-consuming</span>
+        <span>Confusing</span>
+        <span>Difficult for non-experts</span>
+        <span>Prone to incorrect interpretation</span>
+      </div>
+      <div class="key-problem">
+        <p><b>The key UX problem became:</b></p>
+        <p>How might we help users understand whether a food product is suitable for their personal health profile
+          within seconds of scanning it?</p>
+      </div>
+    </section>
+
+    <section class="case-section il-flow-section container case-visible" id="process">
+      <h2>The Solution</h2>
+     <div class="il-overview-copy">
+        <p>IngredLens uses a personalized health profile combined with personal-preference product analysis.</p>
+      </div>
+      <div class="il-flow-container">
+
+        <div class="il-flow-grid">
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-purple">
+              <span class="bi bi-person"></span>
+            </div>
+            <div class="il-flow-card-body">
+             <div class="il-phone-wrap">
+                <img src="../images/ingredLens/app-flow-vector/Welcome.jpg" alt="">
+              </div>
+              <ul class="il-card-list mt-4">
+                <li>Sign up / Login</li>
+                <li>Basic personal details</li>
+                <li>App preferences</li>
+              </ul>
+            </div>
+
+            <!-- <div class="il-flow-arrow il-arrow-purple">→</div> -->
+          </article>
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-green">
+              <span class="bi bi-clipboard2-plus"></span>
+            </div>
+            <div class="il-flow-card-body">
+              <div class="il-phone-wrap">
+                <img src="../images/ingredLens/app-flow-vector/Health-information.jpg" alt="">
+              </div>
+              <ul class="il-card-list mt-4">
+                <li>Medical conditions</li>
+                <li>Allergies</li>
+                <li>Dietary preferences</li>
+              </ul>
+            </div>
+
+            <!-- <div class="il-flow-arrow il-arrow-green">→</div> -->
+          </article>
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-blue">
+              <span class="bi bi-upc-scan"></span>
+            </div>
+            <div class="il-flow-card-body">
+              <div class="il-phone-wrap">
+                <img src="../images/ingredLens/app-flow-vector/Scan-product.jpg" alt="">
+              </div>
+              <ul class="il-card-list mt-4">
+                <li>Barcode scan</li>
+                <li>Product identification</li>
+                <li>Product details</li>
+              </ul>
+            </div>
+
+            <!-- <div class="il-flow-arrow il-arrow-blue">→</div> -->
+          </article>
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-orange">
+              <span class="bi bi-search"></span>
+            </div>
+            <div class="il-flow-card-body">           
+              <div class="il-phone-wrap">
+               <img src="../images/ingredLens/app-flow-vector/Analyzing.jpg" alt="">
+              </div>
+              <ul class="il-card-list mt-4">
+                <li>Ingredient recognition</li>
+                <li>Nutrition analysis</li>
+                <li>Health impact</li>
+              </ul>
+            </div>
+
+            <!-- <div class="il-flow-arrow il-arrow-orange">→</div> -->
+          </article>
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-red">
+              <span class="bi bi-heart-pulse-fill"></span>
+            </div>
+            <div class="il-flow-card-body">
+              <div class="il-phone-wrap">
+                <img src="../images/ingredLens/app-flow-vector/Results.jpg" alt="">
+              </div>
+
+              <ul class="il-card-list mt-4">
+                <li>Health insights</li>
+                <li>Risk warnings</li>
+                <li>Better alternatives</li>
+              </ul>
+            </div>
+
+            <!-- <div class="il-flow-arrow il-arrow-red">→</div> -->
+          </article>
+
+          <article class="il-flow-card">
+            <div class="il-flow-icon il-green">
+              <span class="bi bi-shield-check"></span>
+            </div>
+
+            <div class="il-flow-card-body">           
+              <div class="il-phone-wrap">
+                <img src="../images/ingredLens/app-flow-vector/Alternatives.jpg" alt="">
+              </div>
+              <ul class="il-card-list mt-4">
+                <li>Informed decision</li>
+                <li>Save / Share results</li>
+                <li>Track your choices</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="il-goal">
+          <div class="il-goal-icon">
+            <span class="bi bi-bullseye"></span>
+          </div>
+
+          <div class="il-goal-copy">
+            <strong>Our Goal</strong>
+            <span>Empower users to understand what they consume and make healthier choices every day.</span>
+          </div>
+
+          <div class="il-goal-pills">
+            <span class="personalized"><i class="bi bi-person"></i> Personalized</span>
+            <span class="ai-powered"><i class="bi bi-stars"></i> AI-Powered</span>
+            <span class="health-focused"><i class="bi bi-heart"></i> Health-Focused</span>
+            <span class="trusted"><i class="bi bi-shield-check"></i> Trusted</span>
+          </div>
+        </div>
+
+        <div class="solution-example-copy">
+          <p>Instead of showing users only raw nutrition data, the app translates the information into personalized
+            insights.</p>
+        </div>
+
+        <div class="solution-example-block">
+          <div class="example-label">Example:</div>
+          <div class="example-visual">
+            <p class="example-label-line">
+              Instead of simply displaying:
+              <span class="example-pill">Sugar: 12g per serving</span>
+            </p>
+
+            <p class="example-explanation">
+              <span>IngredLens can explain:</span>
+              <span class="example-warning-dot"></span>
+              <strong>Caution:</strong>
+              <span>This product contains 12g of added sugar per serving and may cause a significant blood glucose
+                increase based on your diabetes profile.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="decision-row">
+          <p>The result is then categorized using a simple decision system:</p>
+          <div class="decision-pills">
+            <span class="decision-pill decision-safe"><span class="decision-dot safe-dot"></span>Safe</span>
+            <span class="decision-pill decision-caution"><span class="decision-dot caution-dot"></span>Caution</span>
+            <span class="decision-pill decision-avoid"><span class="decision-dot avoid-dot"></span>Avoid</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="case-section il-role-tools-section container case-visible" id="role-and-tools"
+      aria-label="Role and tools">
+      <div class="il-role-kicker">MY ROLE:</div>
+      <div class="il-role-tools-grid">
+        <div class="il-role-col">
+
+          <h2>UI/UX Designer</h2>
+          <p>Owned the experience from research through to the design system.</p>
+
+          <div class="il-role-pills">
+            <span>UX Research</span>
+            <span>User Journey Mapping</span>
+            <span>Wireframing</span>
+            <span>Information Architecture</span>
+            <span>Accessibility Considerations</span>
+            <span>Visual Design</span>
+            <span>AI Insight Experience</span>
+          </div>
+        </div>
+
+        <div class="il-tools-col">
+          <h2>Tools</h2>
+          <p>Where the work happened, from flows to final surface.</p>
+
+          <div class="il-tool-pills">
+            <span>Figma</span>
+            <span>FigJam</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Visual Studio Code</span>
+            <span>Anti Gravity</span>
+            <span>AI-assisted ideation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-audience-section container case-visible" aria-label="Who it's for">
+      <div class="il-audience-kicker">WHO IT'S FOR</div>
+      <h2 class="il-audience-title">Understanding the User</h2>
+      <p class="il-audience-copy">The primary users include people who want to make informed food decisions but may not
+        have the knowledge or time to interpret complex food labels</p>
+
+      <div class="il-user-groups">
+        <article class="il-user-group-card">
+          <div class="il-user-group-label">GROUP 01</div>
+          <h4>Health-conscious consumers</h4>
+          <p>Regularly check nutrition info and want faster product comparisons.</p>
+        </article>
+
+        <article class="il-user-group-card">
+          <div class="il-user-group-label">GROUP 02</div>
+          <h4>People managing conditions</h4>
+          <p>Diabetes, high blood pressure, thyroid, cholesterol, heart-related concerns.</p>
+        </article>
+
+        <article class="il-user-group-card">
+          <div class="il-user-group-label">GROUP 03</div>
+          <h4>People with food allergies</h4>
+          <p>Need to catch a trigger ingredient before it reaches the cart.</p>
+        </article>
+
+        <article class="il-user-group-card">
+          <div class="il-user-group-label">GROUP 04</div>
+          <h4>Diet-focused users</h4>
+          <p>Vegetarian, vegan, Jain, non-vegetarian, keto, high protein.</p>
+        </article>
+      </div>
+
+      <h2 class="il-pain-header">Key User Pain Points</h2>
+
+      <div class="il-pain-grid">
+        <article class="il-pain-card il-pain-purple">
+          <div class="il-pain-icon"><span>?</span></div>
+          <div class="il-pain-visual il-visual-ingredients">
+            <span>INGREDIENTS:</span>
+            <strong>Malto dextrin, Hydrogenated Vegetable Oil (Palm Kernel, Soybean Oil), Stabilizer (INS 460),</strong>
+          </div>
+          <blockquote>“I don't understand all the ingredients.”</blockquote>
+          <p>Ingredient lists often contain unfamiliar technical names.</p>
+        </article>
+
+        <article class="il-pain-card il-pain-orange">
+          <div class="il-pain-icon"><span>⏱</span></div>
+          <div class="il-pain-visual il-visual-checking">
+            <div class="il-check-badge">Checking every product takes too much time.</div>
+          </div>
+          <blockquote>“Checking every product takes too much time.”</blockquote>
+          <p>Users need to make decisions quickly, especially while shopping.</p>
+        </article>
+
+        <article class="il-pain-card il-pain-red">
+          <div class="il-pain-icon"><span>?</span></div>
+          <div class="il-pain-visual il-visual-health">
+            <div class="il-health-note">Health Conditions</div>
+            <label><input type="checkbox" checked> Diabetes</label>
+            <label><input type="checkbox" checked> High Blood Pressure</label>
+          </div>
+          <blockquote>“I don't know whether this is safe for my condition.”</blockquote>
+          <p>Nutritional information is generic and does not explain personal health implications.</p>
+        </article>
+
+        <article class="il-pain-card il-pain-green">
+          <div class="il-pain-icon"><span>Q</span></div>
+          <div class="il-pain-visual il-visual-search">
+            <div class="il-search-phone">
+              <div class="il-search-header">Better Alternatives</div>
+              <div class="il-search-item">Low Sugar Granola</div>
+              <div class="il-search-item">High Protein Granola</div>
+            </div>
+          </div>
+          <blockquote>“I have to search for healthier alternatives separately.”</blockquote>
+          <p>Discovering a better product often requires additional research.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section il-design-goals-section container case-visible" aria-label="Design goals">
+      <div class="il-design-goals-kicker">DESIGN GOALS</div>
+      <h2 class="il-design-goals-title">Five decisions that shaped every screen</h2>
+
+      <div class="il-goals-row">
+        <article class="il-goal-cell il-goal-scan">
+          <div class="il-design-mockup-wrap px-3">
+            <img class="il-design-mockup w-100" src="../images/ingredLens/design_goals/Instant scanning.jpg"
+              alt="Phone illustration showing a product scanning interface with a barcode scanner and product information"
+              title="Phone illustration showing a product scanning interface with a barcode scanner and product information">
+          </div>
+          <div class="il-goal-divider"></div>
+          <h4>Instant scanning</h4>
+          <p>The scanner is the fastest path to product information</p>
+        </article>
+
+        <article class="il-goal-cell il-goal-results">
+          <div class="il-design-mockup-wrap px-3">
+            <img class="il-design-mockup w-100" src="../images/ingredLens/design_goals/Personal results.jpg"
+              alt="Phone illustration showing a product scanning interface with a barcode scanner and product information"
+              title="Phone illustration showing a product scanning interface with a barcode scanner and product information">
+          </div>
+          <div class="il-goal-divider"></div>
+          <h4>Personal results</h4>
+          <p>Every result weights conditions, allergies, and diet.</p>
+        </article>
+
+        <article class="il-goal-cell il-goal-risk">
+          <div class="il-design-mockup-wrap px-3">
+            <img class="il-design-mockup w-100" src="../images/ingredLens/design_goals/Understandable-risk.jpg"
+              alt="Phone illustration showing a product scanning interface with a barcode scanner and product information"
+              title="Phone illustration showing a product scanning interface with a barcode scanner and product information">
+          </div>
+          <div class="il-goal-divider"></div>
+          <h4>Understandable risk</h4>
+          <p>Clear visual signals instead of overwhelming medical data.</p>
+        </article>
+
+        <article class="il-goal-cell il-goal-explain">
+          <div class="il-design-mockup-wrap px-3">
+            <img class="il-design-mockup w-100" src="../images/ingredLens/design_goals/explain-why.jpg"
+              alt="Phone illustration showing a product scanning interface with a barcode scanner and product information"
+              title="Phone illustration showing a product scanning interface with a barcode scanner and product information">
+          </div>
+          <div class="il-goal-divider"></div>
+          <h4>Explain the why</h4>
+          <p>Users should understand why a product is safe or unsafe.</p>
+        </article>
+
+        <article class="il-goal-cell il-goal-action">
+          <div class="il-design-mockup-wrap px-3">
+            <img class="il-design-mockup w-100" src="../images/ingredLens/design_goals/enable-action.jpg"
+              alt="Phone illustration showing a product scanning interface with a barcode scanner and product information"
+              title="Phone illustration showing a product scanning interface with a barcode scanner and product information">
+          </div>
+          <div class="il-goal-divider"></div>
+          <h4>Enable action</h4>
+          <p>An unsuitable product is followed by a better one</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section il-sitemap-section container case-visible"
+      aria-label="Sitemap and information architecture">
+      <div class="il-sitemap-kicker">SITEMAP &amp; INFORMATION ARCHITECTURE</div>
+      <h2 class="il-sitemap-title">The app was structured around 17 major areas.</h2>
+
+      <div class="il-sitemap-block">
+        <div class="il-sitemap-label">SITEMAP</div>
+        <p class="il-sitemap-copy">Complete user flow from app launch to key factors</p>
+
+        <div class="il-sitemap-diagram">
+          <img class="w-100" src="../images/ingredLens/sitemap/Sitemap.jpg"
+            alt="Sitemap diagram showing the app's structure and flow">
+        </div>
+      </div>
+
+      <div class="il-ia-block">
+        <div class="il-sitemap-label">INFORMATION ARCHITECTURE</div>
+        <p class="il-sitemap-copy">How the app is structured after the user is inside the application.</p>
+
+        <div class="il-ia-table-wrap">
+          <div class="ia-grid">
+            <img class="ia-visual w-100" src="../images/ingredLens/IA/Information-Architechture.jpg"
+              alt="Information architecture diagram showing the app's structure and flow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-splash-section container case-visible" aria-label="Splash screen section">
+      <div class="il-splash-kicker">SCREENS</div>
+
+      <div class="il-splash">
+        <div class="il-splash-copy">
+          <h2 class="il-splash-number">01 — Splash Screen</h2>
+          <p class="il-splash-intro">The splash screen establishes the product's health-tech identity.</p>
+
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">A Welcoming First Impression</h3>
+            <p class="il-splash-lead">The onboarding screen sets the tone for trust, simplicity, and intelligence. It
+              communicates our core promise instantly and invites users to begin their health-conscious journey.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/ingredlens-logo.svg" alt="IngredLens Logo">
+              <div class="il-feature-copy">
+                <h4>IngredLens Logo</h4>
+                <p>A modern, tech-forward logo that reflects scanning, insights, and intelligent analysis.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/analyze.svg" alt="Analyzer Icon">
+              <div class="il-feature-copy">
+                <h4>Scan, Analyze &amp; Choose Better</h4>
+                <p>Our tagline that captures the app’s core promise in a simple and memorable way.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/scanner.svg" alt="Scanner Icon">
+              <div class="il-feature-copy">
+                <h4>Scanner Pulse</h4>
+                <p>A subtle animation that brings life to the experience &amp; highlights the scanning.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/premium-health.svg"
+                alt="Premium Health-Tech Background Icon">
+              <div class="il-feature-copy">
+                <h4>Premium Health-Tech Background</h4>
+                <p>A clean gradient with soft hues that conveys trust, clarity and innovation.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/cta-arrow.svg" alt="Get Started Icon">
+              <div class="il-feature-copy">
+                <h4>Get Started CTA</h4>
+                <p>Make user feel confident that they’re about to use a smart, reliable and personalized health
+                  companion.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Splash screen mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/splash-screen-mobile.jpg"
+              alt="Phone mockup showing the IngredLens splash screen with logo, tagline, and scanner pulse animation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-registraion-section container case-visible"
+      aria-label="Registration screen section">
+      <div class="il-splash">
+        <div class="il-splash-copy">
+          <h2 class="il-splash-number">02 — Personalized Registration</h2>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <p class="il-splash-lead">The registration experience collects key details to understand the user better and
+              enable personalized insights. The app also calculates BMI automatically and offers a guest option for a
+              seamless start.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/basic-info.svg" alt="Basic Information Icon">
+              <div class="il-feature-copy">
+                <h4>Basic Information</h4>
+                <p>We collect essential details like name,age, gender, height, and weight to personalize the experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/bmi.svg" alt="BMI Icon">
+              <div class="il-feature-copy">
+                <h4>Auto BMI Calculation</h4>
+                <p>The app automatically calculates the user's BMI and presents the result in a simple,
+                  easy-to-understand format.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/why-bmi.svg" alt="Why BMI Icon">
+              <div class="il-feature-copy">
+                <h4>Why BMI?</h4>
+                <p>BMI provides an additional data point that can support broader health and calorie-related
+                  personalization. However, we present it as an informative indicator, not the sole definition of a
+                  user's health.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/guest-option.svg" alt="Guest Option Icon">
+              <div class="il-feature-copy">
+                <h4>Guest Option</h4>
+                <p>A prominent "Skip & Continue as Guest" option ensures users can immediately access the core scanning
+                  feature without unnecessary friction.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Splash screen mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/registration-mobile.jpg"
+              alt="Phone mockup showing the IngredLens splash screen with logo, tagline, and scanner pulse animation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-conditions container case-visible" aria-label="Health conditions section">
+      <div class="il-splash">
+        <div class="il-splash-copy">
+          <h2 class="il-splash-number">03 — Medical Conditions & Allergies</h2>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">Personalized for Your Health Needs</h3>
+            <p class="il-splash-lead">This screen enables personalization without making the experience feel like a
+              complicated medical form.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/health-conditions.svg " alt="Medical Conditions Icon">
+              <div class="il-feature-copy">
+                <h4>Select Your Conditions</h4>
+                <p>Choose from common conditions like Diabetes, High BP, Thyroid, PCOS, Cholesterol, Heart Disease, and
+                  Kidney Issues.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/allergies.svg" alt="Allergies Icon">
+              <div class="il-feature-copy">
+                <h4>Add Allergies</h4>
+                <p>Quick-select tags for common allergens like Peanut, Gluten, Dairy, Soy, and Shellfish.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/chips.svg" alt="Dietary Preferences Icon">
+              <div class="il-feature-copy">
+                <h4>Faster with Chips</h4>
+                <p>We used selectable chips and tags instead of traditional checkboxes to make profile creation faster
+                  and more mobile-friendly.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/results.svg" alt="Dietary Preferences Icon">
+              <div class="il-feature-copy">
+                <h4>More Relevant Results</h4>
+                <p>Your selections help us provide personalized ingredient analysis and healthier recommendations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Health conditions mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/health-conditions.jpg"
+              alt="Phone mockup showing the IngredLens health conditions screen with options for medical conditions, allergies, and dietary preferences">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-prederences container case-visible" aria-label="Diet Preferences section">
+      <div class="il-splash">
+        <div class="il-splash-copy">
+          <h2 class="il-splash-number">04 — Diet Preferences</h2>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">Eat Your Way. Reach Your Goal</h3>
+            <p class="il-splash-lead">Users can choose their preferred eating pattern and set their nutrition goals,
+              helping IngredLens deliver more relevant food insights and personalized recommendations.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/Eat-pattern.svg" alt="Medical Conditions Icon">
+              <div class="il-feature-copy">
+                <h4>Choose Your Eating Pattern</h4>
+                <p>Select from vegetarian, vegan, Jain, non-vegetarian, keto or high protein using large visual cards.
+                </p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/calorie-goal.svg" alt="Calorie Goal Icon">
+              <div class="il-feature-copy">
+                <h4>Set Your Calorie Goal</h4>
+                <p>Define your daily calorie target based on your lifestyle and goals.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/weight-goal.svg" alt="Dietary Preferences Icon">
+              <div class="il-feature-copy">
+                <h4>Define Your Weight Goal</h4>
+                <p>Choose whether you want to lose, maintain or gain weight, and add your current and target weight.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/insights.svg" alt="Dietary Preferences Icon">
+              <div class="il-feature-copy">
+                <h4>Get More Relevant Insights</h4>
+                <p>These inputs allow recommendations to become more accurate and personalized to your needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Health conditions mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/Diet-Preferences.jpg"
+              alt="Phone mockup showing the IngredLens health conditions screen with options for medical conditions, allergies, and dietary preferences">
+          </div>
+
+        </div>
+        <div class="ux-decision-row d-flex" style="background-color: #E6F8F4; padding:15px;">
+          <div class="ux-idea">
+            <img src="../images/ingredLens/screens/icons/ux-decision.svg" alt="UX Decision Icon"
+              style="width: 40px; height: 40px; margin-right: 10px;">
+          </div>
+          <div class="content-idea">
+            <h4 style="margin-bottom: 5px; color:#00B8AA;">UX Decision</h4>
+            <p style="margin-bottom: 0;">I used large visual cards and simple input controls to make personalization
+              feel intuitive, engaging and
+              mobile-friendly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-dashboard container case-visible" aria-label="Personalised Dashboard section">
+      <div class="il-splash">
+        <div class="il-splash-copy d-flex">
+          <h2 class="il-splash-number">05 — Personalized Dashboard</h2> <small> [Version - 2]</small>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">A Smarter Start to Healthier Choices</h3>
+            <p class="il-splash-lead">For new users, the dashboard focuses on discovery and trust - showcasing real
+              stories and personalized recommendations even before they start scanning products.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/video-testimonials.svg" alt="Video Testimonials">
+              <div class="il-feature-copy">
+                <h4>Video Testimonials</h4>
+                <p>Real stories build trust and show the value of personalization.
+                </p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/recommendations.svg" alt="Personalized Recommendations">
+              <div class="il-feature-copy">
+                <h4>Personalized Recommendations</h4>
+                <p>A curated selection of foods based on the user's profile.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/best-food.svg" alt="Best Foods for You">
+              <div class="il-feature-copy">
+                <h4>Best Foods for You</h4>
+                <p>Discover nutritious options that match your health goals.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/avoid.svg" alt="Avoid Today">
+              <div class="il-feature-copy">
+                <h4>Avoid Today</h4>
+                <p>Identify foods that may not be suitable for your condition.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/alternatives.svg" alt="Healthy Alternatives">
+              <div class="il-feature-copy">
+                <h4>Healthy Alternatives</h4>
+                <p>Get smarter swaps for a healthier lifestyle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Health conditions mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/Personalized-Dashboard.jpg"
+              alt="Phone mockup showing the IngredLens health conditions screen with options for medical conditions, allergies, and dietary preferences">
+          </div>
+
+        </div>
+        <div class="ux-decision-row d-flex" style="background-color: #E6F8F4; padding:15px;">
+          <div class="ux-idea">
+            <img src="../images/ingredLens/screens/icons/ux-decision.svg" alt="UX Decision Icon"
+              style="width: 40px; height: 40px; margin-right: 10px;">
+          </div>
+          <div class="content-idea">
+            <h4 style="margin-bottom: 5px; color:#00B8AA;">UX Decision</h4>
+            <p style="margin-bottom: 0;">I designed a dynamic dashboard for new users to highlight the value of
+              personalization early and build trust through real stories and curated recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-scanner-experience container case-visible" aria-label="Scanner Experience section">
+      <div class="il-splash">
+        <div class="il-splash-copy d-flex">
+          <h2 class="il-splash-number">06 — Scanner Experience</h2>
+        </div>
+        <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+          <h3 class="il-splash-feature-heading">A Smarter Start to Healthier Choices</h3>
+          <p class="il-splash-lead" style="max-width: max-content;">For new users, the dashboard focuses on discovery
+            and trust - showcasing real
+            stories and personalized recommendations even before they start scanning products.</p>
+        </div>
+        <div>
+          <img src="../images/ingredLens/screens/icons/Scanner-Experience.jpg" alt="Scanner Experience Mockup"
+            style="width: 100%; height: auto;">
+        </div>
+        <div class="scanner-features mt-4">
+          <h4 class="il-splash-number">Scanner Features</h4>
+          <div class="scanner-icons">
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/live-camera.svg" alt="live camera icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/scan-corners.svg" alt="AI Icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/animated-scan-laser.svg" alt="Insights Icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/barcode-recognition.svg" alt="Recommendations Icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/Ingredient-label.svg" alt="Recommendations Icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/scan-history.svg" alt="Recommendations Icon">
+            </div>
+            <div class="scanner-feature">
+              <img src="../images/ingredLens/scanner-features/status-badge.svg" alt="Recommendations Icon">
+            </div>
+          </div>
+        </div>
+        <div class="ux-decision-row d-flex mt-5" style="background-color: #E6F8F4; padding:15px;">
+          <div class="ux-idea">
+            <img src="../images/ingredLens/screens/icons/ux-principle.svg" alt="UX Decision Icon"
+              style="width: 40px; height: 40px; margin-right: 10px;">
+          </div>
+          <div class="content-idea">
+            <h4 style="margin-bottom: 5px; color:#00B8AA;">UX Principles</h4>
+            <p style="margin-bottom: 0;">The user should always understand what the system is doing. That's why the
+              scanning flow provides clear visual feedback at every step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-product-result container case-visible" aria-label="Product Result section">
+      <div class="il-splash">
+        <div class="il-splash-copy d-flex">
+          <h2 class="il-splash-number">07 — Unsafe Product Result</h2>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">Clear Warnings. Better Choices.</h3>
+            <p class="il-splash-lead">When a product presents significant concerns, the result screen communicates
+              urgency without creating unnecessary fear. It converts complex nutrition data into simple, personalized
+              insights and also suggests healthier alternatives.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/D-grade-health-score.svg" alt="D-Grade Health Score">
+              <div class="il-feature-copy">
+                <h4>D-Grade Health Score</h4>
+                <p>Real stories build trust and show the value of personalization.
+                </p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/key-concerns.svg" alt="Key Concerns">
+              <div class="il-feature-copy">
+                <h4>Key Concerns</h4>
+                <p>A curated selection of foods based on the user's profile.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/condition-warning.svg" alt="Condition-Specific Warnings">
+              <div class="il-feature-copy">
+                <h4>Condition-Specific Warnings</h4>
+                <p>Real stories build trust and show the value of personalization.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/ingredient-breakdown.svg" alt="Ingredient Breakdown">
+              <div class="il-feature-copy">
+                <h4>Ingredient Breakdown</h4>
+                <p>Real stories build trust and show the value of personalization.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/healthier-alternatives.svg" alt="Healthy Alternatives">
+              <div class="il-feature-copy">
+                <h4>Healthy Alternatives</h4>
+                <p>Get smarter swaps for a healthier lifestyle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Health conditions mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/Unsafe-Product-Result.jpg"
+              alt="Phone mockup showing the IngredLens health conditions screen with options for medical conditions, allergies, and dietary preferences">
+          </div>
+
+        </div>
+        <div class="ux-decision-row d-flex" style="background-color: #E6F8F4; padding:15px;">
+          <div class="ux-idea">
+            <img src="../images/ingredLens/screens/icons/ux-principle.svg" alt="UX Goal Icon"
+              style="width: 40px; height: 40px; margin-right: 10px;">
+          </div>
+          <div class="content-idea">
+            <h4 style="margin-bottom: 5px; color:#00B8AA;">UX Goal</h4>
+            <p style="margin-bottom: 0;">Inform, empower and guide users towards healthier choices - not just create
+              fear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section il-safe-product-result container case-visible" aria-label="Product Result section">
+      <div class="il-splash">
+        <div class="il-splash-copy d-flex">
+          <h2 class="il-splash-number">08 — Safe Product Result</h2>
+        </div>
+        <div class="il-splash-layout">
+          <div class="il-feature-list order-xs-1" aria-label="Key elements list">
+            <h3 class="il-splash-feature-heading">Safe Choices. Healthier You</h3>
+            <p class="il-splash-lead">When a product is suitable for the user's
+              health profile, the app provides a clear
+              A-grade score with positive reinforcement,
+              nutritional insights and similar healthy
+              alternatives.</p>
+            <div class="il-splash-key">KEY ELEMENTS</div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/A-grade-score.svg" alt="A-Grade Health Score">
+              <div class="il-feature-copy">
+                <h4>A-Grade Health Score</h4>
+                <p>A clear and reassuring score to show this product is a healthy choice for you.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/Safety-check.svg" alt="Key Concerns">
+              <div class="il-feature-copy">
+                <h4>Safety Check</h4>
+                <p>Confirms the product matches your medical conditions, dietary preferences and allergen profile.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/Nutritional-strenght.svg" alt="Nutritional Strengths">
+              <div class="il-feature-copy">
+                <h4>Nutritional Strengths</h4>
+                <p>Highlights key nutrients and the benefits of this product.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/ingredient-quality.svg" alt="Ingredient Quality">
+              <div class="il-feature-copy">
+                <h4>Ingredient Quality</h4>
+                <p>Shows what's inside and the overall ingredient quality.</p>
+              </div>
+            </div>
+
+            <div class="il-feature-item">
+              <img src="../images/ingredLens/screens/icons/similar-healthy-products.svg" alt="Healthy Alternatives">
+              <div class="il-feature-copy">
+                <h4>Similar Healthy Options</h4>
+                <p>Recommends better or similar alternatives for continued healthy choices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="il-splash-visual" aria-label="Health conditions mockup">
+            <img class="w-100" src="../images/ingredLens/screens/icons/Safe-Product-Result.jpg"
+              alt="Phone mockup showing the IngredLens health conditions screen with options for medical conditions, allergies, and dietary preferences">
+          </div>
+
+        </div>
+        <div class="ux-decision-row d-flex" style="background-color: #E6F8F4; padding:15px;">
+          <div class="ux-idea">
+            <img src="../images/ingredLens/screens/icons/ux-principle.svg" alt="UX Goal Icon"
+              style="width: 40px; height: 40px; margin-right: 10px;">
+          </div>
+          <div class="content-idea">
+            <h4 style="margin-bottom: 5px; color:#00B8AA;">UX Goal</h4>
+            <p style="margin-bottom: 0;">Reassure, inform and empower users to make confident and healthy food choices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="case-footer">
+    <div class="container">
+      <div><a class="brand footer-brand" href="../index.html"><span>UI/UX</span><small>PLAYGROUND</small></a>
+        <p>© 2026 UI/UX Playground</p>
+      </div>
+      <div class="footer-links"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a
+          href="../index.html#contact">Contact</a></div><a class="back-top" href="#top" aria-label="Back to top"><i
+          class="bi bi-arrow-up"></i></a>
+    </div>
+  </footer>
+  <script src="../assets/js/case-study.js"></script>
+  <style>
+    .scanner-icons {
+      display: grid;
+      grid-auto-flow: column;
+    }
+  </style>
+</body>
+
+</html>
