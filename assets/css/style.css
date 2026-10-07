@@ -244,3 +244,17 @@ small {
 .project-meta { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 7px; color: var(--muted); font: 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
 .project-info p { min-height: 4.8em; line-height: 1.6; }
 @media (max-width: 767px) and (min-width: 300px) {.hero-art-wrap{ display: none;}.hero-layout { grid-template-columns: 1fr;}.hero-metrics{grid-template-columns: 1fr 1fr;}}
+
+.article-coming-soon { cursor: default; }
+.article-coming-soon:hover { transform: none; }
+.article-coming-soon:hover .article-art { transform: none; box-shadow: none; }
+.article-coming-soon-label {
+  display: inline-block;
+  margin-top: 3px;
+  font: 10px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.article-figma-variants { background: #eef2ff url('../../images/blog-banner/figma-variants-vs-components.svg') center / cover no-repeat; }
