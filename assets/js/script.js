@@ -68,24 +68,6 @@ captchaAnswer?.addEventListener('input', () => {
 	if (captchaError) captchaError.hidden = true;
 });
 
-const caseStudyPaths = [
-	'./case-studies/ingredilens.html',
-	'./case-studies/life-bridge.html',
-	'./case-studies/turismo-transports.html',
-	'./case-studies/cke-restaurants.html',
-	'./case-studies/credx.html',
-	'./case-studies/life-at-zenesys.html'
-];
-
-document.querySelectorAll('.project-card').forEach((card, index) => {
-	const link = document.createElement('a');
-	link.className = card.className;
-	link.href = caseStudyPaths[index];
-	link.setAttribute('aria-label', `View case study: ${card.querySelector('h3')?.textContent}`);
-	while (card.firstChild) link.appendChild(card.firstChild);
-	card.replaceWith(link);
-});
-
 const revealItems = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
 	const revealObserver = new IntersectionObserver((entries, observer) => {
