@@ -324,3 +324,21 @@ small {
 		transform: none;
 	}
 }
+
+
+/* Presentation preview */
+.slide-cover-preview { display: block; }
+.slide-cover-preview .slide-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.slide-card:hover .slide-cover-preview .slide-preview {
+  transform: scale(1.015);
+  transition: transform .35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide-card:hover .slide-cover-preview .slide-preview { transform: none; }
+}
