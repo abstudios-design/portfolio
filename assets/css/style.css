@@ -169,7 +169,7 @@ small {
 }
 .scanner-icons{display:grid; grid-auto-flow: column;}
 .brand img{max-width:200px;}
-.site-header { border-bottom: 1px solid var(--line); background: rgba(255,255,255,100); position: relative; z-index: 10; }
+.site-header { border-bottom: 1px solid var(--line); background: rgba(255,255,255,100); position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1000; }
 .site-nav { min-height: 83px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; flex-direction: column; line-height: .88; letter-spacing: -.04em; font-weight: 700; }
 .brand span { font-size: 17px; }.brand small { font: 8px var(--mono); letter-spacing: .12em; margin-top: 5px; }
