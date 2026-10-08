@@ -293,3 +293,34 @@ small {
 .slide-info h3 { font-size: 22px; margin: 7px 0 7px; letter-spacing: -.04em; }
 .slide-info p { margin: 0; color: var(--muted); font-size: 13px; }
 @media (max-width: 767px) { .slides { padding-top: 90px; } .slides-grid { grid-template-columns: 1fr; gap: 35px; } .slide-cover { height: 220px; } }
+
+
+/* Presentation cards — hover interaction */
+.slide-card {
+	transition: transform .35s ease, box-shadow .35s ease;
+}
+.slide-card .slide-cover {
+	transition: transform .35s ease, box-shadow .35s ease;
+}
+.slide-card:hover {
+	transform: translateY(-7px);
+}
+.slide-card:hover .slide-cover {
+	box-shadow: 0 18px 32px rgba(23, 23, 23, .12);
+}
+.slide-card:hover .slide-cover > i {
+	transform: scale(1.08) rotate(-3deg);
+}
+.slide-cover > i {
+	transition: transform .35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+	.slide-card,
+	.slide-card .slide-cover,
+	.slide-cover > i {
+		transition: none;
+	}
+	.slide-card:hover {
+		transform: none;
+	}
+}
