@@ -260,3 +260,21 @@ small {
 .article-figma-variants { background: #eef2ff url('../../images/blog-banner/figma-variants-vs-components.svg') center / cover no-repeat; }
 
 .project-grid > a.project-card { color: inherit; text-decoration: none; display: block; }
+
+/* Selected work — coming soon cards */
+.project-coming-soon { position: relative; cursor: default; }
+.project-coming-soon .project-visual { position: relative; }
+.project-coming-soon .project-visual::after {
+	content: "COMING SOON";
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(17, 24, 39, .56);
+	color: #fff;
+	font: 500 13px var(--mono);
+	letter-spacing: .16em;
+	z-index: 3;
+}
+.project-coming-soon:hover .project-visual { transform: none; }
