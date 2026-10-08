@@ -278,3 +278,67 @@ small {
 	z-index: 3;
 }
 .project-coming-soon:hover .project-visual { transform: none; }
+
+
+/* Presentations / Slides */
+.slides { padding-top: 120px; }
+.slides-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.slide-card { min-width: 0; }
+.slide-placeholder { cursor: default; }
+.slide-cover { height: 260px; border-radius: 17px; position: relative; overflow: hidden; background: #eeeaf7; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+.slide-cover > span { position: absolute; top: 21px; left: 23px; color: rgba(0,0,0,.5); font: 10px var(--mono); }
+.slide-cover > i { font-size: 42px; color: var(--purple); }
+.slide-info { padding-top: 17px; }
+.slide-info small { color: var(--muted); font: 12px var(--mono); letter-spacing: .06em; }
+.slide-info h3 { font-size: 22px; margin: 7px 0 7px; letter-spacing: -.04em; }
+.slide-info p { margin: 0; color: var(--muted); font-size: 13px; }
+@media (max-width: 767px) { .slides { padding-top: 90px; } .slides-grid { grid-template-columns: 1fr; gap: 35px; } .slide-cover { height: 220px; } }
+
+
+/* Presentation cards — hover interaction */
+.slide-card {
+	transition: transform .35s ease, box-shadow .35s ease;
+}
+.slide-card .slide-cover {
+	transition: transform .35s ease, box-shadow .35s ease;
+}
+.slide-card:hover {
+	transform: translateY(-7px);
+}
+.slide-card:hover .slide-cover {
+	box-shadow: 0 18px 32px rgba(23, 23, 23, .12);
+}
+.slide-card:hover .slide-cover > i {
+	transform: scale(1.08) rotate(-3deg);
+}
+.slide-cover > i {
+	transition: transform .35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+	.slide-card,
+	.slide-card .slide-cover,
+	.slide-cover > i {
+		transition: none;
+	}
+	.slide-card:hover {
+		transform: none;
+	}
+}
+
+
+/* Presentation preview */
+.slide-cover-preview { display: block; }
+.slide-cover-preview .slide-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.slide-card:hover .slide-cover-preview .slide-preview {
+  transform: scale(1.015);
+  transition: transform .35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide-card:hover .slide-cover-preview .slide-preview { transform: none; }
+}
