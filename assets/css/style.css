@@ -285,13 +285,39 @@ small {
 .slides-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .slide-card { min-width: 0; }
 .slide-placeholder { cursor: default; }
-.slide-cover { height: 260px; border-radius: 17px; position: relative; overflow: hidden; background: #eeeaf7; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+.slide-cover { height: auto; border-radius: 17px; position: relative; overflow: hidden; background: #eeeaf7; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
 .slide-cover > span { position: absolute; top: 21px; left: 23px; color: rgba(0,0,0,.5); font: 10px var(--mono); }
 .slide-cover > i { font-size: 42px; color: var(--purple); }
 .slide-info { padding-top: 17px; }
 .slide-info small { color: var(--muted); font: 12px var(--mono); letter-spacing: .06em; }
 .slide-info h3 { font-size: 22px; margin: 7px 0 7px; letter-spacing: -.04em; }
 .slide-info p { margin: 0; color: var(--muted); font-size: 13px; }
+.slide-coming-soon-label {
+  display: inline-block;
+  margin-top: 10px;
+  font: 10px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.slide-card-coming-soon .slide-cover {
+  background: linear-gradient(135deg, #f3f0ff, #efe9ff);
+}
+.slide-card-coming-soon .slide-cover::after {
+  content: "COMING SOON";
+  position: absolute;
+  inset: auto 18px 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, .7);
+  color: #fff;
+  font: 500 10px var(--mono);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
 @media (max-width: 767px) { .slides { padding-top: 90px; } .slides-grid { grid-template-columns: 1fr; gap: 35px; } .slide-cover { height: 220px; } }
 
 
@@ -332,7 +358,7 @@ small {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: inherit;
 }
 .slide-card:hover .slide-cover-preview .slide-preview {
